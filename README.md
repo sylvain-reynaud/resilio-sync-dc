@@ -2,7 +2,7 @@
 
 ## Usage
 
-`git clone` in favorite folder.
+`git clone` in your favorite folder.
 
 ```sh
 ./run.sh
