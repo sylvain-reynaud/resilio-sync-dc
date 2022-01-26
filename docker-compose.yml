@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+    resilio-sync:
+        container_name: resilio-sync
+        image: resilio/sync
+        restart: on-failure
+        ports:
+            - ${WEBUI_PORT}:8888
+            - 55555
+        volumes:
+            - ${DATA_FOLDER}:/mnt/sync
